@@ -1,0 +1,161 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0; /* Світло-рожевий фон */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #ff66b2; /* Яскраво-рожевий заголовок */
+    font-size: 28px;
+}
+
+#search-bookmark, #add-bookmark-form, #bookmarks-list {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff99cc; /* Рожевий фон для кнопок */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff66b2; /* Яскраво-рожевий при наведенні */
+}
+
+#bookmarks-list button {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* Для прибирання крапок у списках */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background-color: #ffcce0; /* Світло-рожевий фон для елементів списку */
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ff99cc; /* Тонка рамка */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li div {
+    flex: 1;
+    padding-right: 20px;
+}
+
+ul li div.title {
+    font-weight: bold;
+    color: #ff3399; /* Темно-рожевий заголовок */
+}
+
+ul li div.url {
+    color: #b3668c; /* Трохи темніший рожевий для посилань */
+    word-wrap: break-word;
+}
+
+/* Широкі поля введення */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #ff99cc; /* Рожева рамка */
+    border-radius: 3px;
+    background-color: #ffe6f0; /* Легкий рожевий фон для полів вводу */
+}
+
+/* Стилі для форми додавання закладок */
+#add-bookmark-form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffccdd; /* Легкий рожевий фон */
+    padding: 20px;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+}
+
+#add-bookmark-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-bookmark-form button {
+    width: 100px;
+    margin: 10px 5px;
+}
+
+/* Блокування полів вводу і кнопок */
+#bookmark-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bookmark-form input {
+    margin-bottom: 15px;
+}
+
+#bookmark-form button {
+    width: 120px;
+}
+
+/* Центрування результатів пошуку */
+#result-content {
+    margin-top: 15px;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffcce0; /* Фон результатів пошуку */
+    border: 1px solid #ff99cc;
+    border-radius: 5px;
+}
+
+/* Стилі для окремого елемента закладки */
+#single-bookmark {
+    background-color: #ffccdd; /* Легкий рожевий фон для окремого елемента */
+    padding: 20px;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; /* Центрування тексту */
+}
+
+/* Центрування кнопок під інформацією */
+#single-bookmark button {
+    width: 100px; /* Ширина кнопок */
+    margin: 10px 0; /* Відступи для кнопок */
+}
+
+/* Центрування заголовку та кнопки */
+#bookmarks-list h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff66b2;
+}
+
+#back-to-main {
+    margin-top: 20px;
+    background-color: #ff66b2;
+}
+
+#back-to-main:hover {
+    background-color: #ff3399;
+}
